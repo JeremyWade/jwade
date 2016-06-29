@@ -10,7 +10,7 @@
 						<div class="col-sm-12">
 							<h1 class="text-white space-bottom-medium"><style> @import 'https://fonts.googleapis.com/css?family=Roboto:400,500i';
 							</style><font color="#e67e22">J</font><font color="#bdc3c7">eremy<font color="#e67e22">Wade</font></h1>
-							<span>  Social Entrepreneur | Online Educator | Self-Taught Developer</span>
+							<span> Social Entrepreneur |    Educator | Web Developer | Consultant  </span>
 
 							<div class="spacer-40"></div>
 							<div class="spacer-40"></div>
@@ -23,35 +23,29 @@
 				<div class="container">
 					<div class="row clearfix">
 						<div class="col-sm-3 col-xs-12 pull-left">
-							<a href="#" class="btn btn-primary btn-grey">Contact Me</a>
+						<%= link_to "Contact Me", "https://jsie.typeform.com/to/gypQLs", :class => "btn btn-primary btn-grey", target: "_blank" %>
 						</div>
-						
 						<div class="col-sm-4 col-xs-12 pull-right text-right">
 							<ul class="social-icons">
 								<li>
-									<a href="#">
-										<i class="icon social_twitter"></i>
-									</a>
+									<%= link_to "<i class=\"iicon social_twitter\"></i>".html_safe, "https://twitter.com/jwadejeremy"-%></li>
+								<li>
+									<%= link_to "<i class=\"iicon social_facebook\"></i>".html_safe, "https://www.facebook.com/jeremy.wade"-%></i>
 								</li>
 								
 								<li>
-									<a href="#">
-										<i class="icon social_facebook"></i>
-									</a>
+									<%= link_to "<i class=\"iicon social_linkedin\"></i>".html_safe, "https://in.linkedin.com/in/jeremyjwade"-%>
 								</li>
-								
-								<li>
-									<a href="#">
-										<i class="icon social_dribbble"></i>
-									</a>
-								</li>
+									<li>
+									<%= link_to "<i class=\"iicon social_instagram\"></i>".html_safe, "https://www.instagram.com/jeremy.jwade/"-%>
+									</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
 		
-		<div class="main-container">
+		<div class="main-container"><a id="about" class="in-page-link"></a>
 		<section class="inline-image-right">
 				<div class="container">
 					<div class="row">
@@ -71,7 +65,7 @@
 			</section>
 			
 			<section class="no-pad-bottom projects-gallery">
-				<div class="container">
+				<div class="container"><a id="projects" class="in-page-link"></a>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
 							<h1>Projects I'm working on:</h1>
