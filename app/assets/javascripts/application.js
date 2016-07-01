@@ -17,5 +17,4 @@
 //= require lightbox-bootstrap
 //= require jquery.flexslider
 //= require scrollReveal
-//= require jquery-smooth-scroll
 //= require_tree .
