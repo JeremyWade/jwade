@@ -1,4 +1,15 @@
-<%= render 'layouts/nav' %>	
+<%= render 'layouts/nav' %>
+
+<% content_for :head do %>
+  <meta property="og:url"           content="http://www.jwade.io" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Jeremy Wade" />
+  <meta property="og:description"   content="Social Entrepreneur | Educator | Web Developer | Consultant" />
+  <meta property="og:image"         content="<%=asset_url('startupacademy.jpg') %>" />
+  <meta property="og:image:width"   content="600" /> 
+  <meta property="og:image:height"  content="315" />
+  <meta property="fb:app_id"        content="1535582636740127" />
+<% end %>
 <div class="main-container">
 			<header class="page-header resume-header">
 				<div class="background-image-holder parallax-background">
@@ -8,9 +19,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
+							<div class="headertext">
 							<h1 class="text-white space-bottom-medium"><style> @import 'https://fonts.googleapis.com/css?family=Roboto:400,500i';
-							</style><font color="#e67e22">J</font><font color="#bdc3c7">eremy<font color="#e67e22">Wade</font></h1>
+							</style><font color="#ecf0f1">J</font><font color="#ecf0f1">eremy<font color="#f1c40f">Wade</font></h1>
 							<span> Social Entrepreneur |    Educator | Web Developer | Consultant  </span>
+							</div>
 
 							<div class="spacer-40"></div>
 							<div class="spacer-40"></div>
@@ -51,9 +64,9 @@
 					<div class="row">
 						<div class="col-sm-6 align-vertical no-align-mobile">
 							<h1>Hi, I'm Jeremy. I'm inspired by the idea of <b>social innovation</b>.</h1>
-							<h6>Startups, Technology & Social Impact</h6>
+							<h6>Startups, Blockchain Technology & Social Impact</h6>
 							<p class="lead">
-							​Right now, I'm leading the <%= link_to "Jindal Centre for Social Innovation & Entrepreneurship", "http://jsie.in/", :target => "_blank" %> where I help people create new things and innovate on difficult social & environmental challenges. I'm passionate about social enterprise and teach a <%= link_to "FutureLearn MOOC", "https://www.futurelearn.com/courses/social-enterprise-business-doing-good", :target => "_blank" %> on the subject. I'm a self-taught ruby on rails web developer, and created this website. I think alot about the future of finance (I worked at the US Treasury for 4 years) and might start an incubator for blockchain tech startups in the future. 
+							​Right now, I'm leading the <%= link_to "Jindal Centre for Social Innovation & Entrepreneurship", "http://jsie.in/", :target => "_blank" %> where I help people create new things and innovate on difficult social & environmental challenges. I'm passionate about social enterprise and teach a <%= link_to "FutureLearn MOOC", "https://www.futurelearn.com/courses/social-enterprise-business-doing-good", :target => "_blank" %> on the subject. I'm a self-taught ruby on rails web developer, with the help of <%= link_to "OneMonth", "https://onemonth.com/", :target => "_blank" %> and <%= link_to "Stack Overflow", "http://stackoverflow.com/", :target => "_blank" %>. I think alot about blockchain technology and the future of finance (I previously worked at the US Treasury Department) and would like to start an incubator for blockchain startups focused on global financial inclusion.   
 							</p>
 						</div>
 						
@@ -84,7 +97,7 @@
 								<li data-filter="*" class="active"><span>All</span></li>
 								<li data-filter=".socinn"><span>Social Innovation</span></li>
 								<li data-filter=".startups"><span>Startups</span></li>
-								<li data-filter=".finance"><span>Future of Finance</span></li>
+								<li data-filter=".blockchain"><span>Blockchain</span></li>
 							</ul>
 						</div>
 					</div>
@@ -100,7 +113,7 @@
 								<div class="align-vertical">
 									<h1 class="text-white"><strong>Social Innovation Lab</strong> in North India</h1>
 									<p class="text-white">
-										The Jindal Centre for Social Innovation & Entrepreneurship<br> at O.P. Jindal Global University
+										Jindal Centre for Social Innovation & Entrepreneurship<br> at O.P. Jindal Global University
 									</p>
 									<%= link_to "See Project", "https://blog.jsie.in/building-a-social-innovation-lab-in-north-india-5b47d66fc8f#.t4ksc0skl", :target => "_blank", :class => "btn btn-primary btn-white" %>
 								</div>
@@ -113,7 +126,7 @@
 							</div>
 							<div class="hover-state">
 								<div class="align-vertical">
-									<h1 class="text-white"><strong>FutureLearn</strong> Social Enteprise Program</h1>
+									<h1 class="text-white"><strong>FutureLearn</strong> Social Enterprise Program</h1>
 									<p class="text-white">
 										Understand what it takes to launch and run <br> a sustainable social enterprise.
 									</p>
@@ -128,9 +141,9 @@
 							</div>
 							<div class="hover-state">
 								<div class="align-vertical">
-									<h1 class="text-white"><strong>BitArrow</strong> Technology</h1>
+									<h1 class="text-white"><strong>BitArrow</strong></h1>
 									<p class="text-white">
-										Send money as fast <br>as email
+										Send money like email and help everyone participate <br>in the global economy with blockchain technology
 									</p>
 									<%= link_to "See Project", "http://www.bitarrow.com/", :target => "_blank", :class => "btn btn-primary btn-white" %>
 								</div>
@@ -144,8 +157,7 @@
 							<div class="hover-state">
 								<div class="align-vertical">
 									<h1 class="text-white"><strong>Startup Academy</strong></h1>
-									<p class="text-white">
-										<br>
+									<p class="text-white">Skill development & training for the <br> next generation of Indian entrepreneurs 
 									</p>
 									<%= link_to "See Project", "http://startupacademy.jsie.in/", :target => "_blank", :class => "btn btn-primary btn-white" %>
 								</div>
@@ -158,7 +170,7 @@
 							</div>
 							<div class="hover-state">
 								<div class="align-vertical">
-									<h1 class="text-white">International <strong>Social Innovation </strong> Challenge</h1>
+									<h1 class="text-white">International <strong>Social Innovation </strong> Challenge ISIC-15</h1>
 									<p class="text-white">
 										Empowering Women Through Safer Communities<br> August 21-31, 2015
 									</p>
@@ -173,6 +185,7 @@
 				
 			</section>
 		</div>
+		  <script>mixpanel.track("Landing Page View"); </script>
 
 				
 				
