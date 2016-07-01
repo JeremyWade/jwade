@@ -47,7 +47,7 @@ $(document).ready(function(){
 		$('.top-bar .logo').addClass('logo-square');
 	}
 	
-	// Smooth scroll
+	// Smooth scroll (updated)
 
 	$(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
@@ -63,7 +63,6 @@ $(document).ready(function(){
 	    });
 	});
 });
-	
 	
 	// Mobile Toggle
 	
