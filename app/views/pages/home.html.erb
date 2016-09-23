@@ -11,80 +11,33 @@
   <meta property="fb:app_id"        content="1535582636740127" />
 <% end %>
 <div class="main-container">
-			<header class="page-header resume-header">
-				<div class="background-image-holder parallax-background">
-					<%= image_tag('homeoffice1.jpg', class: 'background-image', alt: 'Jeremy Wade') %>
+			<header class="fullscreen-element no-pad centered-text">
+				<div class="background-image-holder parallax-background overlay">
+					<%= image_tag('jwade14.jpg', class: 'background-image', alt: 'Jeremy Wade') %>
 				</div>
-					<div class="spacer-40"></div>
-				<div class="container">
+				
+				<div class="container align-vertical">
 					<div class="row">
-						<div class="col-sm-12">
-							<div class="headertext">
-							<h1 class="text-white space-bottom-medium"><style> @import 'https://fonts.googleapis.com/css?family=Roboto:400,500i';
-							</style><font color="#ecf0f1">J</font><font color="#ecf0f1">eremy<font color="#f1c40f">Wade</font></h1>
-							<span> Lean Startup Coach |  Educator | Web Developer | Consultant  </span>
-							</div>
-
-							<div class="spacer-40"></div>
-							<div class="spacer-40"></div>
+						<div class="col-md-12 text-center">
+							<span class="text-white alt-font"></span>
+							<h1 class="text-white"></h1>
+							<p class="lead text-white"></p>
+							<%= link_to "Contact Me", "https://jsie.typeform.com/to/gypQLs", :class => "btn btn-primary btn-white", target: "_blank" %>
+							<a href="#projects" class="btn btn-primary btn-filled">Let's Work Together</a>
 						</div>
 					</div>
 				</div>
 			</header>
-			
-			<section class="strip bg-white">
-				<div class="container">
-					<div class="row clearfix">
-						<div class="col-sm-3 col-xs-12 pull-left">
-						<%= link_to "Contact Me", "https://jsie.typeform.com/to/gypQLs", :class => "btn btn-primary btn-grey", target: "_blank" %>
-						</div>
-						<div class="col-sm-4 col-xs-12 pull-right text-right">
-							<ul class="social-icons">
-								<li>
-									<%= link_to "<i class=\"iicon social_twitter\"></i>".html_safe, "https://twitter.com/jwadejeremy"-%></li>
-								<li>
-									<%= link_to "<i class=\"iicon social_facebook\"></i>".html_safe, "https://www.facebook.com/jeremy.wade"-%></i>
-								</li>
-								
-								<li>
-									<%= link_to "<i class=\"iicon social_linkedin\"></i>".html_safe, "https://in.linkedin.com/in/jeremyjwade"-%>
-								</li>
-									<li>
-									<%= link_to "<i class=\"iicon social_instagram\"></i>".html_safe, "https://www.instagram.com/jeremy.jwade/"-%>
-									</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+		</div>
 		
-		<div class="main-container"><a id="about" class="in-page-link"></a>
-		<section class="inline-image-right">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 align-vertical no-align-mobile">
-							<h1>Hi, I'm Jeremy. I'm inspired by the idea of <b>social innovation</b>.</h1>
-							<h6>Startups, Technology & Social Impact</h6>
-							<p class="lead">
-							​Right now, I'm leading the <%= link_to "Jindal Centre for Social Innovation & Entrepreneurship", "http://jsie.in/", :target => "_blank" %> where I help people create new things and innovate on difficult social & environmental challenges. I'm passionate about social enterprise and teach a <%= link_to "FutureLearn MOOC", "https://www.futurelearn.com/courses/social-enterprise-business-doing-good", :target => "_blank" %> on the subject. I'm a self-taught ruby on rails web developer, with the help of <%= link_to "OneMonth", "https://onemonth.com/", :target => "_blank" %> and <%= link_to "Stack Overflow", "http://stackoverflow.com/", :target => "_blank" %>. Lately, I've been fascinated by the potential of blockchain technology and the future of finance (I previously worked at the US Treasury Department). I'm working on creating a pilot incubation program for blockchain startups focused on global financial inclusion.   
-							</p>
-						</div>
-						
-						<div class="col-sm-6 text-center">
-							<%= image_tag('headpic1.jpg', class: 'product-image', alt: 'Jeremy Wade') %>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<section class="no-pad-bottom projects-gallery">
+			<section class="no-pad-bottom projects-gallery" id="projects">
 				<div class="container"><a id="projects" class="in-page-link"></a>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
 							<h1>Projects I'm working on:</h1>
 							<p class="lead">
-								How can we work together? Explore the projects below and find out. If you have an idea, get in touch! 
-							</p>
+								Let's figure out how we can work together.<br>
+								Want to propose something new? Then click <%= link_to "here", "https://jsie.typeform.com/to/gypQLs", target: "_blank" %>.</p>
 						</div>
 					</div>
 					
