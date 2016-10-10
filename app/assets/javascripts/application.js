@@ -11,11 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require lightbox-bootstrap
 //= require jquery.flexslider
-//= require jquery-smooth-scroll
 //= require scrollReveal
 //= require_tree .

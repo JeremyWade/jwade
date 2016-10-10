@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '5.0.0'
 # Use sqlite3 as the database for development and test
 gem 'sqlite3', group: [:development, :test]
 # Use postgres as the database in production
@@ -16,16 +16,37 @@ gem 'rails_12factor', group: :production
 # Use bootstrap for improving the look and feel
 gem 'bootstrap-sass'
 
+gem 'scrollreveal-rails', '~> 0.0.1'
+
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
+
+gem 'railties', '~> 5.0.0', '>= 5.0.0'
+
+gem 'actionpack', '~> 5.0.0', '>= 5.0.0'
+
+gem 'activesupport', '~> 5.0.0', '>= 5.0.0'
+
+gem 'actionview', '~> 5.0.0', '>= 5.0.0'
+
+gem 'activemodel', '~> 5.0.0', '>= 5.0.0'
+
+gem 'rack', '~> 2.0', '>= 2.0.1'
+
+gem 'rack-test', '~> 0.6.3'
+
+gem 'rails-dom-testing', '~> 2.0', '>= 2.0.1'
+
+gem 'rails-html-sanitizer', '~> 1.0', '>= 1.0.3'
+
+gem 'thor', '~> 0.19.1'
+
+gem 'method_source', '~> 0.8.2'
+
 # This gem was built for the use of 'Lightbox for Bootstrap 3' as Rails assets pipeline
 gem 'lightbox-bootstrap-rails'
 
-# A Ruby wrapper to integrate scrollReveal - A small library to create and maintain how elements fade in, triggered when they enter the viewport.
-gem "scrollreveal-rails"
-
-gem 'jquery-smooth-scroll-rails', '~> 0.0.5'
-
 # jQuery Countdown (gem version reflects assets version) packaged for standalone sprockets or rails
-gem 'jquery-countdown-rails', '~> 2.0', '>= 2.0.2'
+gem 'jquery-countdown-rails'
 
 # Flexslider 2 by Woo Themes - https://github.com/woothemes/FlexSlider
 gem 'flexslider'
@@ -40,13 +61,10 @@ gem "figaro"
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
